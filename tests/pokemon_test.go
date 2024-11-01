@@ -3,7 +3,7 @@ package tests
 import (
 	"testing"
 
-	pokeapi "github.com/mtslzr/pokeapi-go"
+	pokeapi "github.com/icebox246/pokeapi-go"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -269,4 +269,12 @@ func TestTypeFail(t *testing.T) {
 	result, _ := pokeapi.Type("asdf")
 	assert.Equal(t, "", result.Name,
 		"Expect to receive an empty result.")
+}
+
+func TestPokemonCries(t *testing.T) {
+	result, _ := pokeapi.Pokemon("bulbasaur")
+	assert.Equal(t, "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/1.ogg", result.Cries.Legacy,
+		"Expected to receive legacy cry url")
+	assert.Equal(t, "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1.ogg", result.Cries.Latest,
+		"Expected to receive latest cry url")
 }

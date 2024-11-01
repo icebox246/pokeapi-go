@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mtslzr/pokeapi-go/structs"
+	"github.com/icebox246/pokeapi-go/structs"
 	"github.com/stretchr/testify/assert"
 )
 

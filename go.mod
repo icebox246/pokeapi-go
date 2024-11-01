@@ -1,4 +1,4 @@
-module github.com/mtslzr/pokeapi-go
+module github.com/icebox246/pokeapi-go
 
 go 1.12
 

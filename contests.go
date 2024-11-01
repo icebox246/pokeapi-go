@@ -3,7 +3,7 @@ package pokeapi
 import (
 	"fmt"
 
-	"github.com/mtslzr/pokeapi-go/structs"
+	"github.com/icebox246/pokeapi-go/structs"
 )
 
 // ContestType returns a single contest type (by name or ID).
